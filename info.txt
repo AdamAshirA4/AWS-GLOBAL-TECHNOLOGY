@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SlingLight
+font link: https://www.fontsquirrel.com/fonts/Sling
+font author: STAR Retrieval Systems
+font author site: 
+Slogan Font: Neuton-Extralight.ttf
+
+{"bg":"transparent","icon-gradient-0":"#8E42D3","icon-gradient-1":"#D46975","font":"#000000","slogan":"#141414"}
+      
