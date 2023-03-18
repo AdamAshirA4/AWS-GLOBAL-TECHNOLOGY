@@ -1,0 +1,389 @@
+*, **::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+   display: inline-block;
+   padding: 1em 3.8em;
+   border-radius: 20px;
+   background-color: aqua;
+   text-transform: uppercase;
+   text-decoration: none;
+   margin: 10px 0px;
+}
+
+.btn:hover,
+.btn:focus  {
+     opacity: 80%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+     padding: 1em 0;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+}
+
+.logo {
+    position: relative;
+   top: -10px;
+   left: -75px; 
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 70px;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:   rgba(60, 179, 113);
+    font-family: 'oswald';
+    font-size: 24px;
+}
+
+.nav__link:hover {
+    opacity: 70%;
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.Adam__right {
+    width: 40%; 
+}
+
+
+.main__img {    
+    object-fit: cover;
+    max-width: 55%;
+    min-width: 55%;
+}
+
+.adam--title {
+    font-size: 42px;
+    text-transform: uppercase;
+    color: rgba(60, 179, 113);
+    font-family: 'oswald';
+    margin-top: 100px;
+}
+
+.para {
+   font-size: 20px;
+   color:  rgba(60, 179, 113);
+   font-family: 'montserrat';
+   line-height: 2rem;
+}
+
+.section__one {
+   padding: 20px;
+}
+
+.section--title {
+   font-size: 40px;
+   color: rgba(60, 179, 113);
+   font-family: 'oswald';
+   text-transform: capitalize;
+}
+
+
+.cols__row {
+     margin-top: 30px;
+}
+
+.col {
+  margin-top: 15px;
+}
+
+.spans {
+    font-size: 36px;
+    color: rgba(60, 179, 113);
+    font-family: 'montserrat';
+}
+
+.col__title {
+    font-family: 'montserrat';
+    font-style: italic;
+    font-size: 18px;
+    color: rgba(60, 179, 113);
+}
+
+.col__btn {
+    color: rgba(60, 179, 113);
+    font-size: 19px;
+    font-family: 'montserrat';
+}
+
+.section__two {
+    padding: 40px;
+}
+
+.section__two .right {
+    margin-top: 200px 0 0 0;
+}
+
+.section2--title {
+    color:  rgba(60, 179, 113);
+    font-size: 36px;
+    font-family: 'oswald';
+}
+
+.aside {
+    padding: 30px;
+}
+
+.sidebar {
+    width: 40%;
+}
+
+.aside--title {
+   font-size: 40px;
+   font-family: 'oswald, montserrat';
+   text-transform: capitalize;
+   color: rgba(60, 179, 113);
+}
+
+.spann {
+ width: 15%;
+ text-decoration: underline;
+ text-decoration-color: aqua;
+ text-decoration-thickness: 5px ;
+  color: #fff;
+}
+
+.aside__right {
+   width: 50%;
+   margin-top: 15px;
+}
+
+.opacity {
+    color: rgb(118, 192, 151);
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.footer--title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: 'oswald';
+    color: rgb(118, 192, 151);
+}
+
+.footer--subheading {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(60, 179, 113);
+    font-family: 'montserrat';
+}
+
+.g___col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.g__col {
+    width: 33%;
+    text-align: center;
+}
+
+.footer-span,
+i,
+.footer--p,
+.footer__link {
+    color: rgba(60, 179, 113);
+}
+
+@media (max-width: 980px) {
+
+.header {
+      height: 25px 0;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main,
+    .row,
+    .aside,
+    .section__one,
+    .section__two  {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .Adam__right,
+    .cols__row,
+    .sidebar,
+    .aside__right
+     {
+         width: 90%;
+         margin: auto;
+    }
+    
+    .nav {
+        width: 100%;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle {
+        cursor: pointer;
+        border: 0;
+        width: 5em;
+        height: 5em;
+        padding: 0em;
+        border-radius: 50%;
+        background: rgba(60, 179, 113);
+        color:  #fff; 
+        transition: opacity 250ms ease;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .nav-toggle:focus,
+    .nav-toggle:hover {
+        opacity: .75;
+    }
+    
+    .hamburger {
+        width: 50%;
+        position: relative;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: white;
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 100%;
+    }
+    
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+    
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+    
+    .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+    }
+    
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    } 
+    
+    .nav__list {
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .logo {
+        position: static;
+    }
+    
+    .g___col {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .footer__link {
+       overflow-wrap: break-word;        
+    }
+}
+
+@media (max-width: 610px) {
+    .header {
+        background-color: rgba(60, 179, 113);
+    }
+
+    .main {
+        margin-bottom: 100px 0;
+    }
+
+    .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+    }
+    
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .nav__item {
+        margin: 10px auto;
+    }
+
+    .nav__link {
+      color: #fff;
+    }
+}
